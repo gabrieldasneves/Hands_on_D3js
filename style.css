@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content : center;
+    align-items : center;
+    
+  }
+
+ #barchart div { 
+  display: inline-block;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  width: 20px;
+  margin-right: 3px;
+ }
+ header {
+  width: 100%;
+  margin: 0px;
+
+ }
+
+ svg {
+  display: inline-block;
+  position:fixed;
+  top: 0;
+  left: 0;
+  padding: 0%;
+  margin: 0%;
+}
+
+#hello {
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 150px;
+  vertical-align: middle;
+  overflow: hidden;
+  
+  z-index: -10;
+}
+  

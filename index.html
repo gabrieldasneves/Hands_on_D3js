@@ -12,32 +12,35 @@
 
     <!-- Presentation -->
     <header>
-        <div class="inner-header flex">
-            <div id="hello" style="  color: #EAF6F6;"></div>
             <div class="container">
-                <svg viewBox="0 0 500 150" preserveAspectRatio="xMinYMin meet">
-                    <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill:#66BFBF;"></path>
+                <div id="hello" style="  color: #EAF6F6;"></div>
+     
+                <!-- Creating a SVG image -->
+                <svg class="wave" viewBox="0 0 500 500"
+                    preserveAspectRatio="xMinYMin meet">
+                     
+                    <path d="M0, 100 C150, 200 350,
+                        0 500, 100 L500, 00 L0, 0 Z"
+                        style="stroke:none; fill:rgba(34,193,195,1);">
+                    </path>
                 </svg>
             </div>
-        </div>
-
     </header>
     
     <!-- Bar chart -->
-    <div id="barchart" style="margin-top: 10%;">
-        A simple Bar Chart <br>
-        <div style="height: 4px;"></div>
-        <div style="height: 8px;"></div>
-        <div style="height: 15px;"></div>
+    <div id="barchart" >
+        <p>A simple Bar Chart</p> <br>
+        <div style="height: 8px;"></div> <!-- each data spot -->
         <div style="height: 16px;"></div>
-        <div style="height: 23px;"></div>
-        <div style="height: 42px;"></div>
+        <div style="height: 30px;"></div>
+        <div style="height: 32px;"></div>
+        <div style="height: 46px;"></div>
+        <div style="height: 84px;"></div>
     </div>
 
     <!-- Scatter Plot -->
     <div id="scatter" style="margin-top: 10%;">
         A simple Scatter Plot <br>
-
     </div>
 
 

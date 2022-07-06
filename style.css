@@ -12,35 +12,41 @@ body {
   background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
   width: 20px;
   margin-right: 3px;
+  font-size: 250%;
+  margin-top: 10%;
  }
+
  header {
   width: 100%;
   margin: 0px;
-
  }
 
- svg {
-  display: inline-block;
-  position:fixed;
-  top: 0;
-  left: 0;
-  padding: 0%;
-  margin: 0%;
-}
 
 #hello {
   width: 100%;
   text-align: center;
 }
+#hello p{
+  margin-top: 5%;
+}
 
+svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 .container {
   display: inline-block;
   position: relative;
   width: 100%;
-  padding-bottom: 150px;
+  height: auto;
+  padding-bottom: auto;
+  margin-bottom: 15%;
   vertical-align: middle;
-  overflow: hidden;
-  
-  z-index: -10;
+  top: 0;
+  left: 0;
+  font-size: 200%;
 }
   

@@ -1,9 +1,10 @@
+
 body {
     display: flex;
     flex-direction: column;
     justify-content : center;
     align-items : center;
-    
+
   }
 
  #barchart div { 
@@ -19,34 +20,49 @@ body {
  header {
   width: 100%;
   margin: 0px;
+  background-image:url('bg.jpeg') ;
+  background-repeat: no-repeat;
+  background-size: cover;
  }
 
 
-#hello {
-  width: 100%;
-  text-align: center;
-}
-#hello p{
-  margin-top: 5%;
+.header {
+  height: 50vh;
+  background-image: 
+  linear-gradient(to right bottom, 
+   rgba(76, 216, 255, 0.8),
+   rgba(30, 108, 217, 0.8)),
+   url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAtuzjl256KKqi5O7UO7T9sMM2awv0KmNakQ&usqp=CAU');
+  
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
 }
 
-svg {
-  display: inline-block;
+
+.text-box {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
-.container {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding-bottom: auto;
-  margin-bottom: 15%;
-  vertical-align: middle;
-  top: 0;
-  left: 0;
-  font-size: 200%;
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+
+  backface-visibility: hidden;
+  margin-bottom: 20px;
 }
-  
+
+.heading-primary-main {
+  display: block;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+
+

@@ -13,30 +13,55 @@
 
     <!-- Presentation -->
             
-            <header class="header">                    
-                </div>
+    <header class="header">                    
+        </div>
                 
-                <div class="text-box">
-                    <h1 class="heading-primary"></h1>
-                </div>
-            </header>
+        <div class="text-box">
+            <h1 class="heading-primary"></h1>
+        </div>
+    </header>
     
     
     <!-- Bar chart -->
     <div id="barchart" >
         <p>A simple Bar Chart</p> <br>
+        <pre>
+            <code>
+                html:
+&lt;div&gt; style="height: 8px;"&gt;&lt;/div&gt; 
+&lt;div&gt; style="height: 16px;"&gt;&lt;/div&gt;
+&lt;div&gt; style="height: 30px;"&gt;&lt;/div&gt;
+&lt;div&gt; style="height: 32px;"&gt;&lt;/div&gt;
+&lt;div&gt; style="height: 46px;"&gt;&lt;/div&gt;
+&lt;div&gt; style="height: 84px;"&gt;&lt;/div&gt;
+
+                JS:
+const barchartData = [4,8,15,16,23,42];
+
+d3.select('#barchart').selectAll("div")
+    .data(barchartData)
+    .enter()
+    .append("div")
+    .style("height", (d) => d + "px");
+            </code>
+        </pre>
+
         <div style="height: 8px;"></div> <!-- each data spot -->
         <div style="height: 16px;"></div>
         <div style="height: 30px;"></div>
         <div style="height: 32px;"></div>
         <div style="height: 46px;"></div>
         <div style="height: 84px;"></div>
+        
     </div>
 
-    <!-- Scatter Plot -->
-    <div id="scatter" style="margin-top: 10%;">
-        A simple Scatter Plot <br>
-    </div>
+
+
+
+    <!-- Pie chart -->
+    <p style="margin-top: 10%;">A simple Pie Chart</p><br>
+    <svg id="svg"></svg>
+    
 
 
     <footer>

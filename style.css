@@ -25,6 +25,10 @@ body {
   background-size: cover;
  }
 
+ p {
+  text-align: center;
+ }
+
 
 .header {
   height: 50vh;
@@ -64,5 +68,11 @@ body {
   letter-spacing: 5px;
 }
 
-
-
+#svg{
+  flex-direction: column;
+  justify-content : center;
+  align-items : center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
